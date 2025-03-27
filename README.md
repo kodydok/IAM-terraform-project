@@ -2,30 +2,31 @@ This project is from a simulated situation of a company that has team of 10 empl
 Using terraform, I created the users, user groups, group policies, and attached the users to the associated user groups.
 
 Team Structure & Access Needs: 
-  4 Developers (need EC2 and S3 access)
-  2 Operations (need full infrastructure access)
-  1 Finance Manager (needs cost management access)
-  3 Data Analysts (need read-only access to data resources)
+- 4 Developers (need EC2 and S3 access)
+- 2 Operations (need full infrastructure access)
+- 1 Finance Manager (needs cost management access)
+- 3 Data Analysts (need read-only access to data resources)
 
 Implement These Permissions:
-  Developers:
-    EC2 management
-    S3 access for application files
-    CloudWatch logs viewing
+
+Developers:
+- EC2 management
+- S3 access for application files
+- CloudWatch logs viewing
   
-  Operations:
-    Full EC2, CloudWatch access
-    Systems Manager access
-    RDS management
+Operations:
+- Full EC2, CloudWatch access
+- Systems Manager access
+- RDS management
   
-  Finance:
-    Cost Explorer
-    AWS Budgets
-    Read-only resource access
+Finance:
+- Cost Explorer
+- AWS Budgets
+- Read-only resource access
   
-  Analysts:
-    Read-only S3 access
-    Read-only database access
+Analysts:
+- Read-only S3 access
+- Read-only database access
 
 The management account should only be used for viewing billing or managing AWS accounts in an AWS organization. 
 The account should also have MFA enabled for security.
